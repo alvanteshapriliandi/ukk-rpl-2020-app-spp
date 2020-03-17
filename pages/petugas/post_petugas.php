@@ -7,6 +7,8 @@
     $password = md5($_POST['password']);
     $nama_petugas = $_POST['nama_petugas'];
     $level = $_POST['level'];
+    // var_dump($username, $password, $nama_petugas, $level);
+    // exit();
     try {
         $STH = $DBH->prepare("INSERT INTO petugas ( username, password, nama_petugas, level ) values ( ?, ?, ?, ? )");
         $STH->execute([$username, $password, $nama_petugas, $level]);

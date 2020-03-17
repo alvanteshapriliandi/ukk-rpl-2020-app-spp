@@ -5,7 +5,7 @@
            <div class="text-right m-5 mr-0">
                 <a href="<?php echo "http://$_SERVER[HTTP_HOST]"."/pages/petugas/index.php"; ?>" class="btn-tambah">Kembali</a>
            </div>
-           <form method="POST" action="update_petugas.php">
+           <form method="POST" action="post_petugas.php">
                 <label for="username">username</label>
                 <input type="text" id="username" name="username">
                 <label for="password">Password</label>

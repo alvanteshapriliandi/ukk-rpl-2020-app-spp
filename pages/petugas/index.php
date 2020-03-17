@@ -24,9 +24,8 @@
                         <td><?php echo $row['username'] ?></td>
                         <td><?php echo $row['level'] ?></td>
                         <td class="text-center">
-                            <a href="" class="text-info">Detail</a>
                             <a href="<?php echo "http://$_SERVER[HTTP_HOST]"."/pages/petugas/edit.php?id_petugas=".$row['id_petugas']; ?>" class="text-success">Edit</a>
-                            <a href="" class="text-danger">Hapus</a>
+                            <a href="<?php echo "http://$_SERVER[HTTP_HOST]"."/pages/petugas/delete.php?id_petugas=".$row['id_petugas']; ?>" class="text-danger">Hapus</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
